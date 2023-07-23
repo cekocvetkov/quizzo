@@ -1,3 +1,22 @@
+# Quizzo
+An application for performing CRUD operations on quizzes.
+
+The main idea of this project was to play around with server side rendering and Next.js server actions
+
+## Data layer
+Quizzos are saved in a SQLite database in order to simplify the data layer (Prisma is used as ORM). The focus on this project is mainly the Next.js Data Fetching and not the underlying persistence itself.
+
+### Prisma studio GUI
+npx prisma studio
+
+### Initializing the database (if needs to reset, delete igrations folder etc.)
+npx prisma migrate dev --name init
+
+### Seeding the database (defined in package.json)
+npx prisma db seed 
+
+## Next.js Generated Documentation:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

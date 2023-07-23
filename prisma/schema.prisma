@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model quizzo {
+  id    Int     @id @default(autoincrement())
+  name  String  @unique
+  date  DateTime // Prisma uses DateTime for date fields
+
+  // Define the one-to-many relationship between quizo and question
+  questions question[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model question {
+  id       Int     @id @default(autoincrement())
+  question String  
+  answer   String
+  category String
+
+  // Define the many-to-one relationship between question and quizo
+  quizzo    quizzo?  @relation(fields: [quizzoId], references: [id])
+  quizzoId  Int?
+}
