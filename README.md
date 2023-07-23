@@ -1,18 +1,21 @@
 # Quizzo
 An application for performing CRUD operations on quizzes.
 
-The main idea of this project was to play around with server side rendering and Next.js server actions
+The main idea of this project was to play around with server side rendering and Next.js server actions.
+
+It doesn't use any css framework or additional fonts and utilizes a minimal set of custom css classes with minimalistic styles saved in a global stylesheet to emphasize simplicity and create focus on the main idea of the project.
 
 ### Data layer
 Quizzos are saved in a SQLite database in order to simplify the data layer (Prisma is used as ORM). The focus on this project is mainly the Next.js Data Fetching and not the underlying persistence itself.
 
-### Prisma studio GUI
+### Useful commands
+#### Prisma studio GUI
 npx prisma studio
 
-### Initializing the database (if needs to reset, delete igrations folder etc.)
+#### Initializing the database (if needs to reset, delete igrations folder etc.)
 npx prisma migrate dev --name init
 
-### Seeding the database (defined in package.json)
+#### Seeding the database (defined in package.json)
 npx prisma db seed 
 
 ## Next.js Generated Documentation:
