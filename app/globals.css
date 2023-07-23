@@ -104,13 +104,6 @@ a {
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 600px) {
-  .questions-wrapper {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-}
-
 .quizzo {
   display: flex;
   flex-direction: column;
@@ -175,4 +168,57 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* quizzos/[id]*/
+.edit-link {
+  display: flex;
+  align-self: flex-end;
+  color: chocolate;
+}
+
+.questions-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .questions-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+
+.question {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.question-content {
+  display: flex;
+}
+
+.answer {
+  padding-left: 2rem;
+  visibility: hidden;
+  display: flex;
+}
+
+.answer-visible {
+  padding-left: 2rem;
+  display: flex;
+}
+
+.title {
+  color: chocolate;
+}
+
+.answer.show {
+  visibility: visible;
 }

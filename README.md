@@ -3,7 +3,7 @@ An application for performing CRUD operations on quizzes.
 
 The main idea of this project was to play around with server side rendering and Next.js server actions
 
-## Data layer
+### Data layer
 Quizzos are saved in a SQLite database in order to simplify the data layer (Prisma is used as ORM). The focus on this project is mainly the Next.js Data Fetching and not the underlying persistence itself.
 
 ### Prisma studio GUI
