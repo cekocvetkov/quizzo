@@ -9,14 +9,14 @@ It doesn't use any css framework or additional fonts and utilizes a minimal set 
 Quizzos are saved in a SQLite database in order to simplify the data layer (Prisma is used as ORM). The focus on this project is mainly the Next.js Data Fetching and not the underlying persistence itself.
 
 ### Useful commands
-#### Prisma studio GUI
-npx prisma studio
+#### Open Prisma studio GUI
+`npx prisma studio`
 
-#### Initializing the database (if needs to reset, delete igrations folder etc.)
-npx prisma migrate dev --name init
+#### Initializing the database (if needs to reset, delete migrations folder etc.)
+`npx prisma migrate dev --name init`
 
 #### Seeding the database (defined in package.json)
-npx prisma db seed 
+`npx prisma db seed`
 
 ## Next.js Generated Documentation:
 
