@@ -6,9 +6,10 @@ const prisma = new PrismaClient();
 async function main() {
 	try {
 		const quizzes = await generateQuizzes();
+		const questions = SAMPLE_QUESTIONS;
+		let i = 0;
+
 		for (const quiz of quizzes) {
-			const questions = SAMPLE_QUESTIONS;
-			let i = 0;
 			for (let j = i; j < i + 20; j++) {
 				const randomQuestion = questions[j];
 				const question = await prisma.question.create({
@@ -17,7 +18,6 @@ async function main() {
 						quizzoId: quiz.id,
 					},
 				});
-
 			}
 			i += 20;
 			console.log(`Quiz ${quiz.name} created with 20 questions.`);
