@@ -5,7 +5,9 @@ import { revalidatePath } from "next/cache";
 
 export async function deleteQuizzo(quizzoId: number) {
 	console.log(`Deleting quizzo with id ${quizzoId}`);
-	await new Promise((resolve) => setTimeout(resolve, 2000));
+
+	//simmulate slower deletion to see the loading animation
+	await new Promise((resolve) => setTimeout(resolve, 1000));
 
 	const deleteUser = await prisma.quizzo.delete({
 		where: {

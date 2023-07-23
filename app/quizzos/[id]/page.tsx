@@ -1,12 +1,11 @@
-import { Question } from "@/app/Models";
 import prisma from "@/db/PrismaClient";
 import Link from "next/link";
-import { QuestionComponent } from "./Question";
+import Question, { QuestionComponent } from "./QuestionComponent";
 
 async function getQuestionsByQuizzoId(id: number): Promise<Question[]> {
 	const questions: Question[] = await prisma.question.findMany({
 		where: {
-			quizzoId: parseInt(id),
+			quizzoId: +id,
 		},
 	});
 

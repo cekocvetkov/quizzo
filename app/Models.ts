@@ -1,3 +1,5 @@
+export const EMPTY_SEARCH_TOKEN = "0empty0";
+
 export interface Quizzo {
 	id?: number;
 	name?: string;
