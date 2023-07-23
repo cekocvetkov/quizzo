@@ -18,7 +18,6 @@ async function main() {
 					},
 				});
 
-				questions.push(question);
 			}
 			i += 20;
 			console.log(`Quiz ${quiz.name} created with 20 questions.`);
@@ -53,13 +52,49 @@ async function generateQuizzes() {
 		date: new Date(),
 		updatedAt: new Date(),
 	};
+	const quiz3Data = {
+		name: `Quiz Wizards`,
+		date: new Date(),
+		updatedAt: new Date(),
+	};
+	const quiz4Data = {
+		name: `Mind Benders`,
+		date: new Date(),
+		updatedAt: new Date(),
+	};
+	const quiz5Data = {
+		name: `Knowledge Quest`,
+		date: new Date(),
+		updatedAt: new Date(),
+	};
+	const quiz6Data = {
+		name: `Mind Olympics`,
+		date: new Date(),
+		updatedAt: new Date(),
+	};
 	const quiz1 = await prisma.quizzo.create({
 		data: quiz1Data,
 	});
 	const quiz2 = await prisma.quizzo.create({
 		data: quiz2Data,
 	});
+	const quiz3 = await prisma.quizzo.create({
+		data: quiz3Data,
+	});
+	const quiz4 = await prisma.quizzo.create({
+		data: quiz4Data,
+	});
+	const quiz5 = await prisma.quizzo.create({
+		data: quiz5Data,
+	});
+	const quiz6 = await prisma.quizzo.create({
+		data: quiz6Data,
+	});
 	quizzes.push(quiz1);
 	quizzes.push(quiz2);
+	quizzes.push(quiz3);
+	quizzes.push(quiz4);
+	quizzes.push(quiz5);
+	quizzes.push(quiz6);
 	return quizzes;
 }
