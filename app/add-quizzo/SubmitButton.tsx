@@ -7,7 +7,9 @@ function SubmitButton() {
 
 	return (
 		<div className="submit-button">
-			<button type="submit">add new quizzo</button>
+			<button disabled={pending} type="submit">
+				add new quizzo
+			</button>
 			{pending ? <div className="loading-delete-submit"></div> : <></>}
 		</div>
 	);
