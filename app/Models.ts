@@ -13,8 +13,8 @@ export interface QuizzoWithQuestions {
 }
 export interface Question {
 	id?: number;
-	question?: string;
-	answer?: string;
-	category?: string;
+	question: string;
+	answer: string;
+	category: string;
 	quizzoId?: number | null;
 }

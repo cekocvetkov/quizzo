@@ -136,7 +136,24 @@ a {
   left: 3.5rem;
   color: #E6E4E2;
 }
+.loading-delete-submit {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 3px solid chocolate;
+  border-radius: 50%;
+  border-top-color: #E6E4E2;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
 
+  position: relative;
+}
+
+.submit-button {
+  display: flex;
+  gap: 0.5rem;
+}
+  
 .loading-delete {
   display: inline-block;
   width: 13px;
@@ -280,4 +297,38 @@ button {
 
 button:hover {
   color: chocolate;
+}
+.quizzo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.quizzo-inputs {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quizzo-inputs-without-button {}
+
+.add-input {
+  font-family: 'Courier New', Courier, monospace !important;
+  background: 0;
+  border: 0;
+  outline: none;
+  caret-color: chocolate;
+}
+
+.question-inputs-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.questi {
+  flex: 2;
 }
