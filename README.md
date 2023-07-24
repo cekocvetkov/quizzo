@@ -1,7 +1,7 @@
 # Quizzo
 An application for performing CRUD operations on quizzes.
 
-The main idea of this project was to play around with server side rendering and Next.js server actions.
+**The main idea of this project was to play around with server side rendering and Next.js server actions.**
 
 It doesn't use any css framework or additional fonts and utilizes a minimal set of custom css classes with minimalistic styles saved in a global stylesheet to emphasize simplicity and create focus on the main idea of the project.
 
