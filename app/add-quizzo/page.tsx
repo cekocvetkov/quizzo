@@ -68,7 +68,7 @@ function page() {
 							<input required className="add-input" type="text" name="quizzoName" placeholder="Quizka Name" />
 							<input required className="add-input" type="date" name="quizzoDate" placeholder="Quizka Date" />
 						</div>
-						<SubmitButton></SubmitButton>
+						<SubmitButton props={{ buttonText: "add new quizzo" }}></SubmitButton>
 					</div>
 					{renderQuestionInputs()}
 				</div>

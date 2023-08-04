@@ -7,7 +7,7 @@ function Header() {
 				<Link href="/">quizzo</Link>
 			</div>
 			<div className="menu">
-				<Link href="/questions">questions</Link>
+				<Link  href="/questions">questions</Link>
 				<Link href="/add-quizzo">add quizzo</Link>
 			</div>
 		</div>

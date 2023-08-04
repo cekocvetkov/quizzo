@@ -7,8 +7,8 @@ export interface Quizzo {
 }
 export interface QuizzoWithQuestions {
 	id?: number;
-	name?: string;
-	date?: Date;
+	name: string;
+	date: Date;
 	questions: Question[];
 }
 export interface Question {
@@ -17,4 +17,12 @@ export interface Question {
 	answer: string;
 	category: string;
 	quizzoId?: number | null;
+}
+
+export interface questionCreateInput {
+	id: number;
+	question: string;
+	answer: string;
+	category: string;
+	quizzo?: { connect: { id: number } };
 }

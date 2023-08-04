@@ -2,13 +2,13 @@
 
 import { experimental_useFormStatus } from "react-dom";
 
-function SubmitButton() {
+function SubmitButton({ props: { buttonText } }: { props: { buttonText: string } }) {
 	const { pending } = experimental_useFormStatus();
 
 	return (
 		<div className="submit-button">
 			<button disabled={pending} type="submit">
-				add new quizzo
+				{buttonText}
 			</button>
 			{pending ? <div className="loading-delete-submit"></div> : <></>}
 		</div>

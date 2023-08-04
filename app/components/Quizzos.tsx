@@ -24,7 +24,7 @@ export default async function Quizzos() {
 					!quizzo.id ? (
 						<></>
 					) : (
-						<Link key={quizzo.id} href={`/quizzos/${quizzo.id}`} key={quizzo.id} className="quizzo">
+						<Link key={quizzo.id} href={`/quizzos/${quizzo.id}`} className="quizzo">
 							<div>{quizzo.date?.toLocaleDateString()}</div>
 							<div>{quizzo.name}</div>
 							<Delete
