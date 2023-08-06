@@ -1,4 +1,5 @@
-export const EMPTY_SEARCH_TOKEN = "0empty0";
+export const EMPTY_SEARCH_TOKEN: string = "0empty0";
+export const PAGE_SIZE: number = 20;
 
 export interface Quizzo {
 	id?: number;

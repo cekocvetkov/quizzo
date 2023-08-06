@@ -18,6 +18,15 @@ Quizzos are saved in a SQLite database in order to simplify the data layer (Pris
 #### Seeding the database (defined in package.json)
 `npx prisma db seed`
 
+## Insights
+### Questions page (search for all available questions from all quizzos with pagination)
+#### 1 variant: client side structure with server actions called from client components (/questions-client)
+The questions-client page we call server actions from client components. The server actions are defined in a separate file and are called through `startTransition` from the `useTransition` hook.
+The whole page functionality is build with client side style components and only the database calls are called on the server
+#### 2 variant: client side structure with server actions called from client components
+
+
+
 ## Next.js Generated Documentation:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
